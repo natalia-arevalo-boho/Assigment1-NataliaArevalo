@@ -1,0 +1,30 @@
+/* Styles for the main container */
+#musicalgenreviewcontainter {
+    -fx-background-color: #95ECD6;
+}
+
+/* Styles for the title */
+#title {
+    -fx-text-fill: #c979bc;
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-font-size: 32px;
+}
+
+/* Styles for the description label */
+.description-label {
+    -fx-text-fill: #232121;
+    -fx-font-size: 11px;
+}
+
+/* Styles for the buttons */
+.button {
+    -fx-background-color: #c979bc;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial Rounded MT Bold";
+}
+
+/* Styles for the buttons on hover */
+.button:hover {
+    -fx-background-color: #a64d8a;
+}

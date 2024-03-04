@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="tableViewContainter" alignment="TOP_CENTER" prefHeight="466.0" prefWidth="660.0" spacing="20.0" style="-fx-background-color: #95ECD6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assigm_artist.HelloController" stylesheets="@style.css">
+    <padding>
+        <!-- Set padding for the VBox -->
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label id="title" fx:id="welcomeText" prefHeight="51.0" prefWidth="624.0" text="        Prominent Music Artists" textAlignment="CENTER" textFill="#c979bc">
+        <font>
+            <!-- Set font for the title label -->
+            <Font name="Arial Rounded MT Bold" size="39.0" />
+        </font>
+    </Label>
+
+    <!-- Create a TableView to display artists' information -->
+    <TableView fx:id="artistsTable" prefHeight="288.0" prefWidth="620.0">
+        <columns>
+            <!-- Define columns for ID, Name, Most Popular Year, Musical Genre, Formation Year, End Year, and Youtube Views 2022 -->
+            <TableColumn fx:id="idColumn" prefWidth="31.0" text="ID" />
+            <TableColumn fx:id="nameColumn" prefWidth="60.20001220703125" text="Name" />
+            <TableColumn fx:id="mostPopularYearColumn" prefWidth="122.20001220703125" text="Most Popular Year" />
+            <TableColumn fx:id="musicalGenreColumn" prefWidth="87.0" text="Musical Genre" />
+            <TableColumn fx:id="formationYearColumn" prefWidth="101.199951171875" text="Formation Year" />
+            <TableColumn fx:id="endYearColumn" prefWidth="91.60003662109375" text="End Year" />
+            <TableColumn fx:id="youtubeViews2022Column" prefWidth="127.0" text="Youtube Views 2022" />
+        </columns>
+    </TableView>
+
+    <!-- Create a ButtonBar for buttons -->
+    <ButtonBar prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+            <!-- Button to view table -->
+            <Button mnemonicParsing="true" onAction="#tableViewButton" text="View Table" />
+            <!-- Button to view Youtube 2022 -->
+            <Button mnemonicParsing="true" onAction="#youtubeViewButton" text="Views Youtube 2022" />
+            <!-- Button to view musical genre -->
+            <Button mnemonicParsing="true" onAction="#genreViewButton" text="Musical Genre" />
+        </buttons>
+    </ButtonBar>
+</VBox>
